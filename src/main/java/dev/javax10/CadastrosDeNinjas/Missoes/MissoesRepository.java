@@ -1,4 +1,4 @@
-package Missoes;
+package dev.javax10.CadastrosDeNinjas.Missoes;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
