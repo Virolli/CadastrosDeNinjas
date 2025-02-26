@@ -1,4 +1,4 @@
-package dev.javax10.CadastrosDeNinjas;
+package Ninjas;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

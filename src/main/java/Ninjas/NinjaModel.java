@@ -1,5 +1,8 @@
-package dev.javax10.CadastrosDeNinjas;
+package Ninjas;
+import Missoes.MissoesModel;
 import jakarta.persistence.*;
+
+import java.util.List;
 
 @Entity
 @Table(name = "tb_cadastroNinja")
@@ -10,8 +13,15 @@ public class NinjaModel {
     private Long id;
 
     private String nome;
+
     private String email;
+
     private int idade;
+
+    // @ManyToOne - um ninja tem apenas uma missão.
+    @ManyToOne
+    @JoinColumn(name = "missoes_id") // Foreing Key ou Chave Estrangeira
+    private MissoesModel missoes;
 
     public NinjaModel() {
     }
