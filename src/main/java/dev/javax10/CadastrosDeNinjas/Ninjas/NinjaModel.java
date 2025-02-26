@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "tb_cadastroNinja")
+@Table(name = "tb_cadastro")
 
 public class NinjaModel {
 
@@ -27,9 +27,8 @@ public class NinjaModel {
     @Column(name = "Idade")
     private int idade;
 
-    // @ManyToOne - um ninja tem apenas uma missão.
     @ManyToOne
-    @JoinColumn(name = "missoes_id") // Foreing Key ou Chave Estrangeira
+    @JoinColumn(name = "missoes_id") // Chave estrangeira
     private MissoesModel missoes;
 
 }

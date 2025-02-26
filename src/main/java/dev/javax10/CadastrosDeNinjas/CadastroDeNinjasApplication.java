@@ -3,11 +3,12 @@ package dev.javax10.CadastrosDeNinjas;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
-public class CadastrosDeNinjasApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(CadastrosDeNinjasApplication.class, args);
-	}
+@SpringBootApplication
+public class CadastroDeNinjasApplication {
+    public static void main(String[] args){SpringApplication.run(CadastroDeNinjasApplication.class, args);}
+
+
+
 
 }
