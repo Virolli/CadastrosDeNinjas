@@ -19,9 +19,9 @@ public class NinjaController {
     }
 
     //Adicionar ninja - Criar
-    @PostMapping("/adicionar")
-    public String adicionarNinja(){
-        return "Ninja Criado";
+    @PostMapping("/criar")
+    public NinjaModel criarNinja(@RequestBody NinjaModel ninja) {
+        return ninjaService.criarNinja(ninja);
     }
 
     //Mostrar todos os Ninja - Read
@@ -31,9 +31,9 @@ public class NinjaController {
     }
 
     //Mostrar Ninja por ID - Read
-    @GetMapping("/todosID")
-    public String mostrarTodosOsNinjasID(){
-        return "Mostrar todos os Ninjas por ID";
+    @GetMapping("/listar/{id}")
+    public NinjaModel listarNinjasPorID(@PathVariable Long id){
+        return ninjaService.listarNinjaPorId(id);
     }
 
     //Alterar dados do Ninja - Update
